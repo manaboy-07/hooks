@@ -28,7 +28,8 @@ function App() {
           <ComponentC />
         </ChannelContext.Provider>
       </UserContext.Provider>
-      
+
+      {/* Main Context */}
       <LoginContext.Provider value={{ username, setUserName, setShowProfile }}>
         {showProfile ? <Profile /> : <Login />}
       </LoginContext.Provider>
