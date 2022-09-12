@@ -6,6 +6,10 @@ import EffectHookMouse from "../src/useEffect/EffectHookMouse";
 import EffectHookMouseCon from "../src/useEffectEffectHookMouseCon";
 import IntervalEHook from "../src/useEffect/IntervalEHook";
 import EffectHook from "../src/useEffect/EffectHook";
+import ComponentC from "./useContext/ComponentC";
+import React from "react";
+
+export const UserContext = React.createContext();
 
 function App() {
   return (
@@ -15,6 +19,9 @@ function App() {
       {/* <EffectHookMouseCon /> */}
       {/* <IntervalEHook /> */}
       <DataFetching />
+      <UserContext.Provider value={"Manasseh is learning context"}>
+        <ComponentC />
+      </UserContext.Provider>
     </div>
   );
 }

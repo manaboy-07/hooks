@@ -1,2 +1,17 @@
-// the use context provides a way to pass data through the component tree without
-//passing down props manually at every level
+/** @format */
+
+import React from "react";
+import { UserContext } from "../App";
+function ComponentF() {
+  return (
+    <div>
+      <UserContext.Consumer>
+        {(user) => {
+          return <div>{user}</div>;
+        }}
+      </UserContext.Consumer>
+    </div>
+  );
+}
+
+export default ComponentF;
