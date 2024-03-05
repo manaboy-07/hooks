@@ -17,7 +17,7 @@ function EffectHookMouse() {
     //clean up function
     // when you want to excecute a component return in that function
     return () => {
-      console.log("Componetn un mounted");
+      console.log("Component unmounted");
       window.removeEventListener("mousemove", logMousePosition);
     };
   }, []);

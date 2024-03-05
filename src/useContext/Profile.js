@@ -7,7 +7,7 @@ function SignUp() {
   return (
     <div>
       This is a profile page
-      <h1>Profile name {username}</h1>
+      <h1>Welcome Mr {username}</h1>
     </div>
   );
 }

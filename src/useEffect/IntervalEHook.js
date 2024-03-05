@@ -20,7 +20,8 @@ function IntervalEHook() {
     }
     doSomething();
     //clean up
-
+    //the do smth is affected by someprop so we will use it as a depedency
+    //use the return fucntion to do a clean up
     return () => {
       clearInterval(interval);
     };
