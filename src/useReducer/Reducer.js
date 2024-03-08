@@ -16,11 +16,11 @@ const reducer = (state, action) => {
   }
 };
 function Reducer() {
- const [count, dispatch] = useReducer(reducer, initialState);
- // the useReducer accepts two parameters the reducer function and the initial state
+  const [count, dispatch] = useReducer(reducer, initialState);
+  // the useReducer accepts two parameters the reducer function and the initial state
   return (
     <div>
-        <div>Count - {count}</div>
+      <div>Count - {count}</div>
       <button onClick={() => dispatch("increment")}>Increment</button>
       <button onClick={() => dispatch("decrement")}>Decrement</button>
       <button onClick={() => dispatch("reset")}>Reset</button>
