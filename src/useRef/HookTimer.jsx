@@ -11,6 +11,8 @@ function HookTimer() {
       clearInterval(intervalRef.current);
     };
   }, []);
+  //does not call re-render
+
   return (
     <div>
       <h2>HookTimer - {timer}</h2>

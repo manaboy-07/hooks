@@ -14,6 +14,7 @@ export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
 // we can provie mulyiple context value by adding the provider at each context lebvel
 function App() {
+  
   const [showProfile, setShowProfile] = useState(false);
   const [username, setUserName] = useState("");
   return (

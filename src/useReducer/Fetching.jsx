@@ -40,7 +40,7 @@ function Fetching() {
   return (
     <div>
       {state.loading ? "Loading" : state.post.title}
-      {error ? error : null}
+      {state.error ? state.error : null}
     </div>
   );
 }
